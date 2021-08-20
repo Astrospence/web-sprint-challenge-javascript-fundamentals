@@ -220,7 +220,7 @@ console.log(cuboid.surfaceArea()); // 130
 
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
 //🦄🦄🦄 1. Take your prototypes from above and refactor into class syntax. Please rename your class CuboidMakerTwo and your object cuboidTwo 🦄🦄🦄
-class CuboidMakerTwo{
+/*class CuboidMakerTwo{
   constructor(length, width, height){
     this.length = length;
     this.width = width;
@@ -235,6 +235,28 @@ class CuboidMakerTwo{
 }
 
 const cuboidTwo = new CuboidMakerTwo(4, 5, 5);
+
+console.log('Cuboid 2:');*/ //I wrote the above first to show that I can also initialize with arguments, but it didn't pass the test so I wrote the below, initializing with an object
+
+class CuboidMakerTwo{
+  constructor(attr){
+    this.length = attr.length;
+    this.width = attr.width;
+    this.height = attr.height;
+  }
+  volume(){
+    return this.length * this.width * this.height;
+  }
+  surfaceArea(){
+    return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
+  }
+}
+
+const cuboidTwo = new CuboidMakerTwo({
+  length: 4,
+  width: 5,
+  height: 5
+});
 
 console.log('Cuboid 2:');
 
