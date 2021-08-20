@@ -49,7 +49,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5. Why do we need super() in an extended class?
 
-    - It tells the child to inherit the attributes (key.value pairs) from the parent from which it's extended.
+    - It tells the child to inherit the attribute keys from the parent from which it's extended.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
