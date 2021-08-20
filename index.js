@@ -1,5 +1,3 @@
-
-
 //🚀🚀🚀  Topic #1 Closures 🚀🚀🚀//
 /* 🚀🚀🚀🤓 Task 1: 🤓🚀🚀🚀 
 Study the code below and explain in your own words why nested function can access the variable internal. */
@@ -19,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+//The nested function can access the outer function(myFunction) for variables because of closure. Functions in a nested chain can reach up, but can't reach down.//
 
 
 
