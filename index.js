@@ -28,10 +28,16 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+    const integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let add = 0;
+    for(let i = 0; i < integers[number - 1]; i++){
+      add = add + integers[i];
+    }
+    return add;
   }
+
+  console.log('Task 2:', summation(5));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
