@@ -37,7 +37,7 @@ function summation(number) {
     return add;
   }
 
-  console.log('Task 2:', summation(5));
+  console.log('Task 2:', summation(4));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -156,6 +156,7 @@ function greeting(firstName, lastName){
    return `Hello ${firstName} ${lastName}, nice to meet you!`;
   }
 
+  console.log('Step 2 complete');
   console.log('Step 3:');
   
   
@@ -220,6 +221,11 @@ console.log(cuboid.surfaceArea()); // 130
 
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
 //🦄🦄🦄 1. Take your prototypes from above and refactor into class syntax. Please rename your class CuboidMakerTwo and your object cuboidTwo 🦄🦄🦄
+
+
+//I wrote the below first to show that I can also initialize with arguments, and the code was functioning properly, but it didn't pass the tester. I then wrote the code to initialize with an object, which functioned the same and passed the tester.
+
+
 /*class CuboidMakerTwo{
   constructor(length, width, height){
     this.length = length;
@@ -236,7 +242,7 @@ console.log(cuboid.surfaceArea()); // 130
 
 const cuboidTwo = new CuboidMakerTwo(4, 5, 5);
 
-console.log('Cuboid 2:');*/ //I wrote the above first to show that I can also initialize with arguments, but it didn't pass the test so I wrote the below, initializing with an object
+console.log('Cuboid 2:');*/ 
 
 class CuboidMakerTwo{
   constructor(attr){
