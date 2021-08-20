@@ -118,7 +118,7 @@ const zooAnimals = [
   }
   
   console.log('Request 4:', USApop(zooAnimals));
-  
+
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
@@ -128,9 +128,11 @@ const zooAnimals = [
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
+  function consume(a, b, cb){
+      return cb(a, b);
   }
+
+  console.log('Step 1 complete');
  
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
